@@ -1,0 +1,186 @@
+.contenedor {
+  background-color: rgb(237, 237, 237);
+}
+
+.sidebar {
+  position: fixed;
+  width: 17%;
+  height: 100vh;
+  background: #064663;
+  font-size: 0.65em;
+}
+
+.nav {
+  position: absolute;
+  margin: 0 20%;
+  text-align: left;
+  top: 50%;
+  transform: translateY(-50%);
+  font-weight: bold;
+}
+.nav ul {
+  list-style: none;
+  font-size: 12px;
+}
+.nav ul :hover {
+  transition: 0.4s ease;
+  color: #23b9d3;
+  transform: scale(1.1);
+}
+.active {
+  position: relative;
+  margin: 3.2em 0;
+}
+
+.menu {
+  line-height: 5em;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.4em;
+  color: rgb(248, 243, 243);
+  display: block;
+  transition: all ease-out 300ms;
+}
+body {
+  margin: 0px;
+  position: relative;
+}
+
+/*aqui comienza la nueva seccion inicio */
+.inicio {
+  text-align: center;
+  height: 100vh;
+  width: 100%;
+  background: #041c32;
+}
+/* vh significa que ocupa el 100% de la altura de la ventana */
+h2 {
+  margin-right: 200px;
+  margin: 0%;
+  color: rgb(185, 132, 132);
+}
+p {
+  color: aliceblue;
+}
+.texth2 {
+  color: rgb(244, 244, 244);
+  font-size: 45px;
+  font-family: "Times New Roman", Times, serif;
+}
+.presentacion {
+  margin-right: 500px;
+  margin-top: 50px;
+}
+.nombre {
+  font-size: 30px;
+  background: linear-gradient(to right, #820f82, #00ffff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Quicksand", sans-serif;
+  margin-left: 40px;
+}
+.desarrollador1 {
+  font-size: 60px;
+  padding-top: 70px;
+  margin-left: 100px;
+  font-family: "Quicksand", sans-serif;
+  background: linear-gradient(to right, #820f82, #00ffff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.parrafo {
+  margin-left: 300px;
+  width: 400px;
+  text-align: justify;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 18px;
+}
+
+/* ACA LA INFORMACION PERSONAL */
+.informacion {
+  text-align: center;
+  height: 100vh;
+  width: 100%;
+  background: #041c32;
+  margin: 0%;
+}
+.explaboral {
+  color: white;
+  margin-top: 55px;
+  margin-left: 250px;
+}
+.especificacion {
+  color: #23b9d3;
+  margin-top: 35px;
+  margin-bottom: 10px;
+}
+.tarjetaExpe {
+  margin-left: 250px;
+  margin-top: 50px;
+}
+.habilidades {
+  color: white;
+  font-size: 30px;
+}
+/* aca la de proyectos  */
+.proyectos {
+  text-align: center;
+  height: 100vh;
+  width: 100%;
+  background: #041c32;
+}
+
+li {
+  list-style: none;
+}
+
+.tarjeta {
+  color: black;
+  margin: 70px;
+  height: 200px;
+}
+
+.contendorTarjetas {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-left: 100px;
+}
+.list-group-item {
+  font-family: cursive, fantasy;
+}
+/* SECCION DE CONTACTO  */
+
+.contacto {
+  text-align: center;
+  height: 100vh;
+  width: 100%;
+  background: #041c32;
+}
+
+.divider {
+  height: 1px;
+  background: linear-gradient(to right, #820f82, #00ffff);
+}
+.listacontacto {
+  text-align: left;
+}
+.listacontacto li {
+  margin-bottom: 15px;
+}
+/* CONTENEDORES DE DIVS ESTAN MESCLADOS  */
+.contenedorcontacto {
+  margin-left: 300px;
+  margin-top: 100px;
+}
+.contenedorskill {
+  margin-left: 20px;
+  margin-top: 50px;
+}
+.conexpiencia {
+  align-content: center;
+}
+.contenedorinf {
+  display: flex;
+  margin-left: 300px;
+}

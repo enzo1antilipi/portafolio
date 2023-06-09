@@ -1,0 +1,29 @@
+.contenedorfoo {
+  position: absolute;
+  align-items: center;
+  display: flex;
+  bottom: 0px;
+  height: 9vh;
+  width: 100%;
+  flex-direction: column;
+  background-color: #064663;
+}
+.con {
+  display: flex;
+  align-items: center;
+}
+.foter {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 12px;
+  color: rgb(127, 130, 134);
+}
+.listafoter {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+.listafoter li {
+  margin-right: 60px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}

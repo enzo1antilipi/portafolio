@@ -19,6 +19,8 @@ import { Footer } from "./Footer";
 import { GrMail } from "react-icons/gr";
 import { ImWhatsapp } from "react-icons/im";
 import { BsLinkedin } from "react-icons/bs";
+import { AiOutlineMenu } from "react-icons/ai";
+import { GrClose } from "react-icons/gr";
 import { useState } from "react";
 export const Head = () => {
   const [navClass, setNavClass] = useState("sidebar");
@@ -33,7 +35,7 @@ export const Head = () => {
           <nav className="nav">
             <ul className="lista">
               <button className="cerrarmenu" onClick={handleToggleNavClass}>
-                cerrar
+                <GrClose />
               </button>
               <li className="active">
                 <a href="#inicio" className="menu">
@@ -61,7 +63,7 @@ export const Head = () => {
       </div>
       <section id="inicio" className="inicio">
         <button className="abrirmenu" onClick={handleToggleNavClass}>
-          abrir{" "}
+          <AiOutlineMenu />
         </button>
         <h1 className="desarrollador1">DESARROLLADOR FRONTEND</h1>
         <div className="presentacion">

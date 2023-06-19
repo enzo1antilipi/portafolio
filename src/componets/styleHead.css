@@ -4,15 +4,16 @@
 
 .sidebar {
   position: fixed;
-  width: 17%;
+  width: 16%;
   height: 100vh;
   background: #064663;
   font-size: 0.65em;
+  min-width: 170px;
 }
 
 .nav {
-  position: absolute;
-  margin: 0 20%;
+  position: relative;
+  margin: 0 10%;
   text-align: left;
   top: 50%;
   transform: translateY(-50%);
@@ -21,6 +22,8 @@
 .nav ul {
   list-style: none;
   font-size: 12px;
+  position: relative;
+  margin-left: -15px;
 }
 .nav ul :hover {
   transition: 0.4s ease;
@@ -28,17 +31,19 @@
   transform: scale(1.1);
 }
 .active {
+  display: flex;
   position: relative;
   margin: 3.2em 0;
 }
 
 .menu {
+  position: relative;
+  display: flex;
   line-height: 5em;
   text-transform: uppercase;
   text-decoration: none;
   letter-spacing: 0.4em;
   color: rgb(248, 243, 243);
-  display: block;
   transition: all ease-out 300ms;
 }
 body {
@@ -52,6 +57,7 @@ body {
   height: 100vh;
   width: 100%;
   background: #041c32;
+  overflow: auto;
 }
 /* vh significa que ocupa el 100% de la altura de la ventana */
 h2 {
@@ -68,8 +74,9 @@ p {
   font-family: "Times New Roman", Times, serif;
 }
 .presentacion {
-  margin-right: 500px;
-  margin-top: 50px;
+  width: 60%;
+  margin-left: 10%;
+  margin-top: 5%;
 }
 .nombre {
   font-size: 30px;
@@ -81,19 +88,50 @@ p {
 }
 .desarrollador1 {
   font-size: 60px;
-  padding-top: 70px;
-  margin-left: 100px;
+  padding-top: 50px;
+  margin-left: 00px;
   font-family: "Quicksand", sans-serif;
   background: linear-gradient(to right, #820f82, #00ffff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  display: inline-block;
 }
 .parrafo {
-  margin-left: 300px;
-  width: 400px;
+  margin-top: 10px;
+  width: 100%;
   text-align: justify;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   font-size: 18px;
+  position: relative;
+  color: #aec1ca;
+}
+.parrafo::before {
+  content: " ";
+  position: absolute;
+  left: -30px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  height: 100%;
+  background-color: rgb(180, 188, 189);
+}
+.parrafo:hover {
+  color: #ffffff;
+}
+.abrir-menu {
+  display: none;
+  margin-right: 1%;
+  margin-top: 25px;
+}
+/* ::before es  un pseudoelemento que los que haces es permitirnos agregar estilos a una parte concreta del documento
+como por ejemplo escrbrir sobre una imagen o agregarle cosas a un parrafo (concepto nuevo de css) */
+.contenedorparrafo {
+  margin-left: 200px;
+  display: block;
+  flex-direction: column;
+  position: relative;
+  line-height: 1.6;
+  height: 300px;
 }
 
 /* ACA LA INFORMACION PERSONAL */
@@ -107,7 +145,7 @@ p {
 .explaboral {
   color: white;
   margin-top: 55px;
-  margin-left: 250px;
+  margin-left: 40%;
 }
 .especificacion {
   color: #23b9d3;
@@ -115,7 +153,7 @@ p {
   margin-bottom: 10px;
 }
 .tarjetaExpe {
-  margin-left: 250px;
+  margin-left: 40%;
   margin-top: 50px;
 }
 .habilidades {
@@ -129,17 +167,14 @@ p {
   width: 100%;
   background: #041c32;
 }
-
 li {
   list-style: none;
 }
-
 .tarjeta {
   color: black;
   margin: 70px;
   height: 200px;
 }
-
 .contendorTarjetas {
   display: flex;
   justify-content: center;
@@ -157,7 +192,6 @@ li {
   width: 100%;
   background: #041c32;
 }
-
 .divider {
   height: 1px;
   background: linear-gradient(to right, #820f82, #00ffff);
@@ -173,14 +207,89 @@ li {
   margin-left: 300px;
   margin-top: 100px;
 }
-.contenedorskill {
-  margin-left: 20px;
-  margin-top: 50px;
-}
 .conexpiencia {
   align-content: center;
+  margin-left: 10%;
 }
 .contenedorinf {
   display: flex;
   margin-left: 300px;
+}
+.abrirmenu,
+.cerrarmenu {
+  display: none;
+}
+@media (max-width: 1200px) {
+  .abrirmenu,
+  .cerrarmenu {
+    display: block;
+  }
+  /* .contenedorinf {
+    flex-direction: column;
+    margin: 0%;
+  } */
+  .contenedorinf {
+    margin-left: 150px;
+    align-items: center;
+  }
+
+  .sidebar {
+    opacity: 0;
+    visibility: hidden;
+  }
+  .sidebar.visible {
+    opacity: 1;
+    visibility: visible;
+  }
+  .inicio {
+    width: 100v;
+  }
+}
+@media (max-width: 600px) {
+  .inicio {
+    height: 100vh;
+    width: 100vh;
+  }
+  /*  */
+  .informacion {
+    width: 100vh;
+    height: 100vh;
+  }
+  .contenedorinf {
+    flex-direction: column;
+    margin: 0%;
+  }
+  .explaboral {
+    margin: 15px;
+    margin-left: -5%;
+  }
+  .tarjetaExpe {
+    margin-left: -5%;
+    margin-top: 0px;
+  }
+  /*  */
+  .proyectos {
+    width: 100vh;
+  }
+  .contendorTarjetas {
+    justify-content: center;
+    align-items: center;
+  }
+  .tarjeta {
+    margin-left: 0px;
+    margin-top: 60px;
+  }
+  /*  */
+  .contacto {
+    width: 100vh;
+  }
+  .contenedorcontacto {
+    margin-left: 20%;
+  }
+}
+@media (max-width: 400px) {
+  .tarjeta {
+    margin: 10px;
+    margin-top: 60px;
+  }
 }

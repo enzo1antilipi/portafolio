@@ -1,7 +1,6 @@
 import "./styleHead.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import rick from "../assets/rick.png";
-import imag1 from "../assets/imag1.png";
 import aerolab from "../assets/aerolab.png";
 import js from "../assets/js.png";
 import html from "../assets/html.png";
@@ -20,13 +19,22 @@ import { Footer } from "./Footer";
 import { GrMail } from "react-icons/gr";
 import { ImWhatsapp } from "react-icons/im";
 import { BsLinkedin } from "react-icons/bs";
+import { useState } from "react";
 export const Head = () => {
+  const [navClass, setNavClass] = useState("sidebar");
+  const handleToggleNavClass = () => {
+    setNavClass(navClass === "sidebar" ? "sidebar visible" : "sidebar");
+  };
+
   return (
     <>
       <div className="contenedor">
-        <aside className="sidebar">
+        <aside className={navClass}>
           <nav className="nav">
-            <ul>
+            <ul className="lista">
+              <button className="cerrarmenu" onClick={handleToggleNavClass}>
+                cerrar
+              </button>
               <li className="active">
                 <a href="#inicio" className="menu">
                   Inicio
@@ -52,20 +60,24 @@ export const Head = () => {
         </aside>
       </div>
       <section id="inicio" className="inicio">
+        <button className="abrirmenu" onClick={handleToggleNavClass}>
+          abrir{" "}
+        </button>
         <h1 className="desarrollador1">DESARROLLADOR FRONTEND</h1>
         <div className="presentacion">
-          <h3 className="nombre">Hola mi nombre es</h3>
-          <h3 className="nombre"> Enzo Antilipi</h3>
-          <p className="parrafo">
-            Me encuentro en un proceso de formacion cursando la carrera de
-            Licenciatura en Informática, donde estoy adquiriendo una solida base
-            de conocimientos en diferentes áreas de la informatica. Por otro
-            lado estudio de manera autodidacta especializado en el desarrollo
-            frontend y backend con tecnologias como Node.js. Me emocina poder
-            continuar mi trayectoria laboral y poder seguir creciendo. ¡Gracias
-            por visitar mi portafolio y espero trabajar juntos en futuros
-            proyectos emocionantes!
-          </p>
+          <span className="contenedorparrafo">
+            <h3 className="nombre">Hola mi nombre es Enzo Antilipi</h3>
+            <p className="parrafo">
+              Me encuentro en un proceso de formacion cursando la carrera de
+              Licenciatura en Informática, donde estoy adquiriendo una solida
+              base de conocimientos en diferentes áreas de la informatica. Por
+              otro lado estudio de manera autodidacta especializado en el
+              desarrollo frontend y backend con tecnologias como Node.js. Me
+              emocina poder continuar mi trayectoria laboral y poder seguir
+              creciendo. ¡Gracias por visitar mi portafolio y espero trabajar
+              juntos en futuros proyectos emocionantes!
+            </p>
+          </span>
         </div>
       </section>
       <div className="divider"></div>
@@ -264,7 +276,7 @@ export const Head = () => {
               </div>
             </div>
           </div>
-          {/* hasta el contendor de ambos  */}
+          {/* hasta aca el contendor de ambos  */}
         </div>
       </section>
       <div className="divider"></div>
@@ -358,18 +370,24 @@ export const Head = () => {
           <div className="contenedorcontacto">
             <ul className="listacontacto">
               <li style={{ color: "white" }}>
-                <GrMail /> Email :<a href="">enzoantilipi1@gmail.com</a>
+                <GrMail /> Email{" "}
+                <a href="mailto:enzoantilipi1@gmail.com">
+                  enzoantilipi1@gmail.com
+                </a>
               </li>
 
               <li style={{ color: "white" }}>
-                <ImWhatsapp />
-                WhatsApp
-                <a href="">+54 2945638804</a>
+                <ImWhatsapp /> WhatsApp{" "}
+                <a href="https://wa.link/85q000" target="_blank">
+                  +54 2945638804
+                </a>
               </li>
               <li style={{ color: "white" }}>
-                <BsLinkedin />
-                Linkedin
-                <a href="">
+                <BsLinkedin /> Linkedin{" "}
+                <a
+                  href=" https://www.linkedin.com/in/enzo-antilipi-978097218/"
+                  target="_blank"
+                >
                   https://www.linkedin.com/in/enzo-antilipi-978097218/
                 </a>
               </li>

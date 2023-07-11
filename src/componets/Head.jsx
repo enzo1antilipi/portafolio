@@ -15,12 +15,15 @@ import figma from "../assets/figma.png";
 import material from "../assets/material.png";
 import zustand from "../assets/zustand.png";
 import boo from "../assets/boo.png";
+import "animate.css";
 import { Footer } from "./Footer";
 import { GrMail } from "react-icons/gr";
 import { ImWhatsapp } from "react-icons/im";
 import { BsLinkedin } from "react-icons/bs";
 import { AiOutlineMenu } from "react-icons/ai";
 import { GrClose } from "react-icons/gr";
+import { BsArrowUpRight } from "react-icons/bs";
+
 import { useState } from "react";
 export const Head = () => {
   const [navClass, setNavClass] = useState("sidebar");
@@ -264,6 +267,7 @@ export const Head = () => {
                         style={{ color: "black" }}
                       >
                         Atech
+                        <BsArrowUpRight />
                       </a>
                     </h5>
                     <h6 className="card-subtitle mb-2 text-body-primary">
@@ -271,7 +275,7 @@ export const Head = () => {
                     </h6>
                     <p className="card-text" style={{ color: "black" }}>
                       Calculadora desarrollada con Html,CSS,JavaScript y React.
-                      <br /> Autenticacion desarrollada con Firebase.
+                      <br /> Autenticacion. Herramienta Firebase.
                     </p>
                   </div>
                 </div>
@@ -305,10 +309,10 @@ export const Head = () => {
               </ul>
               <div className="card-body">
                 <a href="#" className="card-link">
-                  Github
+                  Github <BsArrowUpRight style={{ width: "12px" }} />
                 </a>
                 <a href="#" className="card-link">
-                  Proyec
+                  Proyect <BsArrowUpRight style={{ width: "12px" }} />
                 </a>
               </div>
             </div>
@@ -328,11 +332,20 @@ export const Head = () => {
                 </li>
               </ul>
               <div className="card-body">
-                <a href="#" className="card-link">
+                <a
+                  href="https://github.com/enzo1antilipi/aerolab-changetienda.git"
+                  target="_blank"
+                  className="card-link"
+                >
                   Github
+                  <BsArrowUpRight style={{ width: "12px" }} />
                 </a>
-                <a href="#" className="card-link">
-                  Proyect
+                <a
+                  href="https://aerolab-changetienda.vercel.app/"
+                  target="_blank"
+                  className="card-link"
+                >
+                  Proyect <BsArrowUpRight style={{ width: "12px" }} />
                 </a>
               </div>
             </div>

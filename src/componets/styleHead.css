@@ -86,6 +86,8 @@ p {
   -webkit-text-fill-color: transparent;
   font-family: "Quicksand", sans-serif;
   margin-left: 40px;
+  animation: backInDown;
+  animation-duration: 1s;
 }
 .desarrollador1 {
   font-size: 60px;
@@ -96,7 +98,10 @@ p {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   display: inline-block;
+  animation: backInDown;
+  animation-duration: 1s;
 }
+
 .parrafo {
   margin-top: 10px;
   width: 100%;
@@ -105,6 +110,8 @@ p {
   font-size: 18px;
   position: relative;
   color: #aec1ca;
+  animation: backInUp;
+  animation-duration: 1s;
 }
 .parrafo::before {
   content: " ";
@@ -114,10 +121,7 @@ p {
   bottom: 0;
   width: 2px;
   height: 100%;
-  background-color: rgb(180, 188, 189);
-}
-.parrafo:hover {
-  color: #ffffff;
+  background-color: rgb(107, 199, 235);
 }
 .abrir-menu {
   display: none;
@@ -132,7 +136,7 @@ como por ejemplo escrbrir sobre una imagen o agregarle cosas a un parrafo (conce
   flex-direction: column;
   position: relative;
   line-height: 1.6;
-  height: 300px;
+  height: 200px;
 }
 
 /* ACA LA INFORMACION PERSONAL */
@@ -251,11 +255,11 @@ li {
     position: fixed;
     margin-top: 70px;
     margin-left: 20px;
-    opacity: 0.7;
+    opacity: 0.8;
     background: #041c32;
     color: white;
-    border-radius: 9px;
     font-size: 30px;
+    border: none;
   }
   .cerrarmenu {
     background: #064663;
@@ -269,6 +273,13 @@ li {
   .inicio {
     height: 100vh;
     width: 80vh;
+  }
+  .contenedorparrafo {
+    margin-left: 00px;
+    justify-content: center;
+  }
+  .presentacion {
+    margin-left: 150px;
   }
   /*  */
   .informacion {
@@ -296,7 +307,7 @@ li {
     align-items: center;
   }
   .tarjeta {
-    margin-left: 0px;
+    margin-left: -10px;
     margin-top: 60px;
   }
   /*  */
@@ -309,7 +320,7 @@ li {
 }
 @media (max-width: 400px) {
   .tarjeta {
-    margin: 10px;
+    margin: 5px;
     margin-top: 60px;
     margin-right: 20px;
   }

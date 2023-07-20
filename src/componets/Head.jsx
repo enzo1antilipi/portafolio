@@ -308,10 +308,18 @@ export const Head = () => {
                 </li>
               </ul>
               <div className="card-body">
-                <a href="#" className="card-link">
+                <a
+                  href="https://github.com/enzo1antilipi/proyect-ricky.git"
+                  className="card-link"
+                  target="_blank"
+                >
                   Github <BsArrowUpRight style={{ width: "12px" }} />
                 </a>
-                <a href="#" className="card-link">
+                <a
+                  href="https://steady-fox-bb124b.netlify.app/"
+                  target="_blank"
+                  className="card-link"
+                >
                   Proyect <BsArrowUpRight style={{ width: "12px" }} />
                 </a>
               </div>

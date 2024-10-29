@@ -10,6 +10,7 @@ export const Footer = () => {
           <li>HTML</li>
           <li>CSS</li>
           <li>JavaScript</li>
+          <li>Boostrap</li>
         </ul>
       </div>
     </div>

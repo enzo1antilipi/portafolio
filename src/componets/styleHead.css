@@ -1,4 +1,4 @@
-.contenedor {
+/* .contenedor {
   background-color: rgb(237, 237, 237);
 }
 
@@ -46,7 +46,7 @@
   letter-spacing: 0.4em;
   color: rgb(248, 243, 243);
   transition: all ease-out 300ms;
-}
+} */
 body {
   margin: 0px;
   position: relative;
@@ -130,7 +130,7 @@ p {
 }
 /* ::before es  un pseudoelemento que los que haces es permitirnos agregar estilos a una parte concreta del documento
 como por ejemplo escrbrir sobre una imagen o agregarle cosas a un parrafo (concepto nuevo de css) */
-.contenedorparrafo {
+/* .contenedorparrafo {
   margin-left: 200px;
   display: block;
   flex-direction: column;
@@ -177,14 +177,17 @@ li {
 }
 .tarjeta {
   color: black;
-  margin: 70px;
-  height: 200px;
+  margin: 20px;
+  height: 100%;
 }
 .contendorTarjetas {
   display: flex;
   justify-content: center;
   text-align: center;
-  margin-left: 100px;
+  margin-bottom: 10%;
+  margin: auto;
+  padding: 10px;
+
 }
 .list-group-item {
   font-family: cursive, fantasy;
@@ -201,17 +204,9 @@ li {
   height: 1px;
   background: linear-gradient(to right, #820f82, #00ffff);
 }
-.listacontacto {
-  text-align: left;
-}
-.listacontacto li {
-  margin-bottom: 15px;
-}
+
 /* CONTENEDORES DE DIVS ESTAN MESCLADOS  */
-.contenedorcontacto {
-  margin-left: 300px;
-  margin-top: 100px;
-}
+
 .conexpiencia {
   align-content: center;
   margin-left: 10%;
@@ -314,9 +309,7 @@ li {
   .contacto {
     width: 80vh;
   }
-  .contenedorcontacto {
-    margin-left: 20%;
-  }
+  
 }
 @media (max-width: 400px) {
   .tarjeta {
@@ -324,7 +317,167 @@ li {
     margin-top: 60px;
     margin-right: 20px;
   }
-  .contendorTarjetas {
-    margin-left: 0px;
-  }
+  
+} */
+
+
+
+ */
+
+
+/* -----------------------------------------NEW STYLES---------------------------------------------- */
+.container_profile{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 100px;
+}
+.information_profile{
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 10%;
+}
+.container_img_profile{
+  display: flex;
+  align-items: center;
+  align-content: center;
+  margin: auto;
+  justify-content: center;
+  width: 50%;
+  height: 10%;
+}
+.style_img_profile{
+  width:70%; 
+  height:auto; 
+  border-radius:30px;
+  margin-top:100px;
+  margin-right:10%
+}
+.subtitle_dev{
+  color:rgb(184, 110, 0);
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 30px;
+}
+/* Proyects.css */
+.cardd {
+  position: relative;
+  width: 40%;
+  /* height: 300px; */
+  /* overflow: hidden; */
+  background: #ffffff;
+  border-radius: 10px;
+}
+
+.project-info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.cardd:hover .project-info {
+  opacity: 1;
+}
+.iconsExperience{
+  margin-right: 10px;
+  width: 1.5em;
+  height: 1.5em;
+}
+.iconsExperienceProf{
+  width: 2em;
+  height: 2em;
+  margin-right: 10px;
+  margin-top: 10px;
+  transition: transform 0.4s ease;
+}
+.iconsExperienceProf:hover {
+  transform: scale(1.4); /* Escala el icono a 1.2 veces su tamaño original al hacer hover */
+}
+.conteinerProyects{
+  display: flex;
+ /* align-items: ; */
+ justify-content: center;
+ flex-direction: column;
+  height: 80%;
+}
+.imgProyects{
+  width: 100%;
+  height: 90%;
+}
+.card-body:hover .project-info{
+  opacity: 1;
+  
+}
+.card-body {
+  height: 50px;
+}
+.tarjeta:hover{
+  height: 300px;
+
+}
+.tarjeta1{
+  margin-top: 10px;
+  margin-right: 00px;
+}
+.tarjeta2{
+  margin-top: 10px;
+  color: black;
+  margin-left: 50%;
+  height: 100%;
+}
+.iconContact{
+  margin-right: 10%;
+  
+}
+.contenedorcontac{
+  flex-direction: column;
+}
+.contact-card {
+  width: 40%; /* Tamaño de la tarjeta */
+  height: 200px;
+  padding: 20px;
+  /* background-color: #041c32; */
+  border-radius: 10px; /* Bordes redondeados */
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); Sombra suave */
+  text-align: center; /* Centrar contenido */
+  margin: 0 auto; 
+  /* border-color: white; */
+  border: 1px solid white
+}
+
+.contact-title {
+  font-size: 1.4em;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: white;
+
+  border-radius: 10px;
+}
+
+.contact-icons {
+  display: flex;
+  justify-content: space-around; /* Espacio entre íconos */
+  align-items: center;
+}
+
+.iconContact {
+  color: #ffffff; /* Cambia los colores si es necesario */
+  
+}
+
+.iconContact:hover{  
+  box-shadow: 0 0 5px  #ffffff; /* Sombra blanca alrededor del ícono */
+  transition:  0.3s ease; /* Transición suave del efecto hover */
+  border-radius: 10px;
 }

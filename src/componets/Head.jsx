@@ -2,6 +2,7 @@ import "./styleHead.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import rick from "../assets/rick.png";
 import aerolab from "../assets/aerolab.png";
+import panto from "../assets/panto.png";
 import js from "../assets/js.png";
 import html from "../assets/html.png";
 import css from "../assets/css.png";
@@ -33,37 +34,23 @@ export const Head = () => {
 
   return (
     <>
-      <div className="contenedor">
-        <aside className={navClass}>
-          <nav className="nav">
-            <ul className="lista">
-              <button className="cerrarmenu" onClick={handleToggleNavClass}>
-                <GrClose />
-              </button>
-              <li className="active">
-                <a href="#inicio" className="menu">
-                  Inicio
-                </a>
-              </li>
-              <li className="active">
-                <a href="#informacion" className="menu">
-                  Informacion personal
-                </a>
-              </li>
-              <li className="active">
-                <a href="#proyectos" className="menu">
-                  Proyectos
-                </a>
-              </li>
-              <li className="active">
-                <a href="#contacto" className="menu">
-                  Contacto
-                </a>
-              </li>
-            </ul>
-          </nav>
-        </aside>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-link active" aria-current="page" href="#">Home</a>
+        <a class="nav-link" href="#">Features</a>
+        <a class="nav-link" href="#">Pricing</a>
+        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
       </div>
+    </div>
+  </div>
+</nav>
+    
       <section id="inicio" className="inicio">
         <button className="abrirmenu" onClick={handleToggleNavClass}>
           <AiOutlineMenu />
@@ -90,168 +77,7 @@ export const Head = () => {
       SECCION INFORMACION 
       */}
       <section id="informacion" className="informacion">
-        <div>
-          <h2 className="texth2">Informacion personal </h2>
-
-          <div className="contenedorinf">
-            <div className="contenedorskill">
-              <h3 className="habilidades">Habilidades</h3>
-              <h4 className="especificacion">Lenguajes de programacion</h4>
-              <img
-                className="card-img-top"
-                alt="..."
-                src={js}
-                style={{
-                  width: "30px",
-                  height: "auto",
-                  borderRadius: "8px",
-                  marginLeft: "25px",
-                }}
-              />{" "}
-              <img
-                className="card-img-top"
-                alt="..."
-                src={html}
-                style={{
-                  width: "30px",
-                  height: "auto",
-                  borderRadius: "8px",
-                  marginLeft: "25px",
-                }}
-              />
-              <img
-                className="card-img-top"
-                alt="..."
-                src={css}
-                style={{
-                  width: "30px",
-                  height: "auto",
-                  borderRadius: "8px",
-                  marginLeft: "25px",
-                }}
-              />
-              <h4 className="especificacion">Fremeworks y Librerias</h4>
-              <img
-                className="card-img-top"
-                alt="..."
-                src={react}
-                style={{
-                  width: "30px",
-                  height: "auto",
-                  borderRadius: "8px",
-                  background: "white",
-                }}
-              />
-              <img
-                className="card-img-top"
-                alt="..."
-                src={next}
-                style={{
-                  width: "30px",
-                  height: "auto",
-                  borderRadius: "8px",
-                  background: "white",
-                  marginLeft: "25px",
-                  padding: "1px",
-                }}
-              />
-              <img
-                className="card-img-top"
-                alt="..."
-                src={redux}
-                style={{
-                  width: "30px",
-                  height: "auto",
-                  borderRadius: "10px",
-                  background: "white",
-                  marginLeft: "25px",
-                }}
-              />
-              <img
-                className="card-img-top"
-                alt="..."
-                src={material}
-                style={{
-                  width: "30px",
-                  height: "auto",
-                  borderRadius: "10px",
-                  background: "white",
-                  marginLeft: "25px",
-                }}
-              />
-              <img
-                className="card-img-top"
-                alt="..."
-                src={zustand}
-                style={{
-                  width: "35px",
-                  height: "auto",
-                  borderRadius: "10px",
-                  background: "white",
-                  marginLeft: "20px",
-                }}
-              />
-              <img
-                className="card-img-top"
-                alt="..."
-                src={boo}
-                style={{
-                  width: "35px",
-                  height: "auto",
-                  borderRadius: "10px",
-                  background: "white",
-                  marginLeft: "20px",
-                }}
-              />
-              <h4 className="especificacion">Tecnologias y Herramientas</h4>
-              <img
-                className="card-img-top"
-                alt="..."
-                src={github}
-                style={{
-                  width: "30px",
-                  height: "auto",
-                  borderRadius: "10px",
-                  background: "white",
-                }}
-              />
-              <img
-                className="card-img-top"
-                alt="..."
-                src={visual}
-                style={{
-                  width: "30px",
-                  height: "auto",
-                  borderRadius: "10px",
-                  background: "white",
-                  marginLeft: "25px",
-                }}
-              />
-              <img
-                className="card-img-top"
-                alt="..."
-                src={vite}
-                style={{
-                  width: "30px",
-                  height: "auto",
-                  borderRadius: "10px",
-                  background: "white",
-                  marginLeft: "25px",
-                }}
-              />
-              <img
-                className="card-img-top"
-                alt="..."
-                src={figma}
-                style={{
-                  width: "30px",
-                  height: "auto",
-                  borderRadius: "10px",
-                  background: "white",
-                  marginLeft: "25px",
-                }}
-              />
-            </div>
+        
             <div className="conexpiencia">
               <h2 className="explaboral">Experiencia laboral </h2>
               <div className="tarjetaExpe">
@@ -281,9 +107,9 @@ export const Head = () => {
                 </div>
               </div>
             </div>
-          </div>
+
           {/* hasta aca el contendor de ambos  */}
-        </div>
+      
       </section>
       <div className="divider"></div>
       {/*
@@ -359,28 +185,39 @@ export const Head = () => {
             </div>
           </div>
           {/* TARJETA 3 */}
-          {/* <div className="tarjeta">
-            <div className="card" style={{ width: "18rem", height: "400px" }}>
-              <img className="card-img-top" alt="..." src={imag1} />
+        <div className="tarjeta">
+            <div className="card" style={{ width: "18rem", height: "350px" }}>
+              <img className="card-img-top" alt="..." src={panto} />
               <div className="card-body">
-                <h5 className="card-title">Ricky and Morty</h5>
-                <p className="card-text" style={{ color: "black" }}>
-                  Con que se hizo el proyecto
-                </p>
+                <h5 className="card-title">Radiografias panomaricas</h5>
               </div>
               <ul className="list-group list-group-flush">
-                <li className="list-group-item">An item</li>
+                <li className="list-group-item">
+                  HTML//CSS//THREE.JS
+                  <br />
+                  REACT//JAVASCRIPT
+                </li>
               </ul>
               <div className="card-body">
-                <a href="#" className="card-link">
-                  Card link
-                </a>
-                <a href="#" className="card-link">
-                  Another link
+                {/* <a
+                  href="https://github.com/enzo1antilipi/aerolab-changetienda.git"
+                  target="_blank"
+                  className="card-link"
+                >
+                  Github
+                  <BsArrowUpRight style={{ width: "12px" }} />
+                </a> */}
+                <a
+                  href="https://www.panto.imaglabs.org/"
+                  target="_blank"
+                  className="card-link"
+                >
+                  Proyect <BsArrowUpRight style={{ width: "12px" }} />
                 </a>
               </div>
             </div>
-          </div> */}
+          </div>
+                    {/*Fin Tarjeta  */}
         </div>
       </section>
       <div className="divider"></div>

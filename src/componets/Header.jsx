@@ -21,11 +21,8 @@ function Header() {
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        {/* <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-        </li> */}
+    <div class="collapse navbar-collapse" id="navbarNav"style={{width:"100%",display:"flex",justifyContent:"center"}}>
+      <ul class="navbar-nav"  style={{display:"flex",justifyContent:"center",widt:"100%"}}>
         <li class="nav-item">
           <a class="nav-link" href="#perfil">Perfil</a>
         </li>
@@ -45,7 +42,7 @@ function Header() {
 
 </div>
 <div style={{marginLeft:"10%",marginRight:"10%"}}>
-  <div id="perfil" style={{background:"#091a28",height:"80vh"}}>
+  <div id="perfil" style={{background:"#091a28",height:"85vh"}}>
     <Profile/>
     
   </div>

@@ -11,21 +11,19 @@ function Experience (){
 
     return( 
     <div style={{display:"flex",alignContent:"centers",flexDirection:"column",margin:"auto"}}>
-      <h2 style={{color:"white",display:"flex",alignItems:""}}>Experiencia laboral</h2>  
-    <div style={{display:"flex",alignContent:"centers"}}>
+      <h3 style={{color:"white",textAlign:"center",}}>Experiencia laboral</h3>  
        
     <div  className="contendorTarjetas">
         {/* <h1 style={{color:"white"}}>experiencia</h1> */}
       <div className="tarjeta">
-              <div className="card" style={{ width: "22rem", height: "100%" }}>
+              <div className="card" >
                 <img className="card-img-top" alt="..." src={panto} />
                 <div className="card-body">
                   <h5 className="card-title">Radiografias panoramicas
                   </h5>
                       <div className="project-info" >
-          
-          <p>Diagnostico mediante metodos de inteligencia artificial</p>
-            </div>
+                      <p>Desarrollo de frontend para poder visualizar Diagnosticos medicos realizados mediante metodos de inteligencia artificial</p>
+                      </div>
                 </div>
                 <ul className="list-group list-group-flush">
                   <li className="list-group-item">
@@ -61,11 +59,15 @@ function Experience (){
             </div>
              {/* CARD OF ATECH  */}
       <div className="tarjeta">
-              <div className="card" style={{ width: "22rem", height: "100%" }}>
+              <div className="card" >
                 <img className="card-img-top" alt="..." src={atech} />
                  <div className="card-body">
                   <h5 className="card-title">Atech
                   </h5>
+                  <div className="project-info" >
+                      <p>Calculadora de sueldo para poder calcular los sueldos los usuarios 
+                      </p>
+                      </div>
                 </div>
                 <ul className="list-group list-group-flush">
                   <li className="list-group-item">
@@ -101,11 +103,14 @@ function Experience (){
             </div>
              {/* CARD OF cva gaming  */}
               <div className="tarjeta">
-              <div className="card" style={{ width: "22rem", height: "100%" }}>
+              <div className="card" >
                 <img className="card-img-top" alt="..." src={cva1} />
                  <div className="card-body">
                   <h5 className="card-title">Cva Gaming
                   </h5>
+                  <div className="project-info" >
+                      <p>Generacion de interfaces UI, manejor de y visualizacion de grandes cantidades de datos    </p>
+                      </div>
                 </div>
                 <ul className="list-group list-group-flush">
                   <li className="list-group-item">
@@ -146,7 +151,7 @@ function Experience (){
                 </div> */}
               </div>
             </div>
-    </div>
+    
     </div>
     </div>
     )

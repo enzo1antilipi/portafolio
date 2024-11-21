@@ -1,52 +1,4 @@
-/* .contenedor {
-  background-color: rgb(237, 237, 237);
-}
 
-.sidebar {
-  position: fixed;
-  width: 16%;
-  height: 100vh;
-  background: #064663;
-  font-size: 0.65em;
-  min-width: 170px;
-  z-index: 1;
-}
-
-.nav {
-  position: relative;
-  margin: 0 10%;
-  text-align: left;
-  top: 50%;
-  transform: translateY(-50%);
-  font-weight: bold;
-}
-.nav ul {
-  list-style: none;
-  font-size: 12px;
-  position: relative;
-  margin-left: -15px;
-}
-.nav ul :hover {
-  transition: 0.4s ease;
-  color: #23b9d3;
-  transform: scale(1.1);
-}
-.active {
-  display: flex;
-  position: relative;
-  margin: 3.2em 0;
-}
-
-.menu {
-  position: relative;
-  display: flex;
-  line-height: 5em;
-  text-transform: uppercase;
-  text-decoration: none;
-  letter-spacing: 0.4em;
-  color: rgb(248, 243, 243);
-  transition: all ease-out 300ms;
-} */
 body {
   margin: 0px;
   position: relative;
@@ -61,110 +13,17 @@ body {
   overflow: auto;
 }
 /* vh significa que ocupa el 100% de la altura de la ventana */
-h2 {
-  margin-right: 200px;
-  margin: 0%;
-  color: rgb(185, 132, 132);
-}
+  
 p {
   color: aliceblue;
 }
-.texth2 {
-  color: rgb(244, 244, 244);
-  font-size: 45px;
-  font-family: "Times New Roman", Times, serif;
-}
-.presentacion {
-  width: 60%;
-  margin-left: 10%;
-  margin-top: 5%;
-}
-.nombre {
-  font-size: 30px;
-  background: linear-gradient(to right, #820f82, #00ffff);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-family: "Quicksand", sans-serif;
-  margin-left: 40px;
-  animation: backInDown;
-  animation-duration: 1s;
-}
-.desarrollador1 {
-  font-size: 60px;
-  padding-top: 50px;
-  margin-left: 20px;
-  font-family: "Quicksand", sans-serif;
-  background: linear-gradient(to right, #820f82, #00ffff);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  display: inline-block;
-  animation: backInDown;
-  animation-duration: 1s;
-}
-
-.parrafo {
-  margin-top: 10px;
-  width: 100%;
-  text-align: justify;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  font-size: 18px;
-  position: relative;
-  color: #aec1ca;
-  animation: backInUp;
-  animation-duration: 1s;
-}
-.parrafo::before {
-  content: " ";
-  position: absolute;
-  left: -30px;
-  top: 0;
-  bottom: 0;
-  width: 2px;
-  height: 100%;
-  background-color: rgb(107, 199, 235);
-}
-.abrir-menu {
-  display: none;
-  margin-right: 1%;
-  margin-top: 25px;
-}
-/* ::before es  un pseudoelemento que los que haces es permitirnos agregar estilos a una parte concreta del documento
-como por ejemplo escrbrir sobre una imagen o agregarle cosas a un parrafo (concepto nuevo de css) */
-/* .contenedorparrafo {
-  margin-left: 200px;
-  display: block;
-  flex-direction: column;
-  position: relative;
-  line-height: 1.6;
-  height: 200px;
-}
-
 /* ACA LA INFORMACION PERSONAL */
-.informacion {
-  text-align: center;
-  height: 100vh;
-  width: 100%;
-  background: #041c32;
-  margin: 0%;
-}
-.explaboral {
-  color: white;
-  margin-top: 55px;
-  margin-left: 40%;
-}
-.especificacion {
-  color: #23b9d3;
-  margin-top: 35px;
-  margin-bottom: 10px;
-}
+
 .tarjetaExpe {
   margin-left: 40%;
   margin-top: 50px;
 }
-.habilidades {
-  color: white;
-  font-size: 30px;
-}
+
 /* aca la de proyectos  */
 .proyectos {
   text-align: center;
@@ -172,13 +31,10 @@ como por ejemplo escrbrir sobre una imagen o agregarle cosas a un parrafo (conce
   width: 100%;
   background: #041c32;
 }
-li {
-  list-style: none;
-}
 .tarjeta {
   color: black;
   margin: 20px;
-  height: 100%;
+  height: 10%;
 }
 .contendorTarjetas {
   display: flex;
@@ -187,6 +43,17 @@ li {
   margin-bottom: 10%;
   margin: auto;
   padding: 10px;
+
+}
+@media (max-width: 600px) {
+  .contendorTarjetas {
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .tarjeta {
+    width: 90%; /* Ajusta el tamaño según el número de columnas que deseas */
+  }
 
 }
 .list-group-item {
@@ -200,17 +67,9 @@ li {
   width: 100%;
   background: #041c32;
 }
-.divider {
-  height: 1px;
-  background: linear-gradient(to right, #820f82, #00ffff);
-}
 
 /* CONTENEDORES DE DIVS ESTAN MESCLADOS  */
 
-.conexpiencia {
-  align-content: center;
-  margin-left: 10%;
-}
 .contenedorinf {
   display: flex;
   margin-left: 300px;
@@ -219,117 +78,21 @@ li {
 .cerrarmenu {
   display: none;
 }
-@media (max-width: 1200px) {
-  .abrirmenu,
-  .cerrarmenu {
-    display: block;
-  }
-  /* .contenedorinf {
-    flex-direction: column;
-    margin: 0%;
-  } */
-  .contenedorinf {
-    margin-left: 150px;
-    align-items: center;
-  }
 
-  .sidebar {
-    opacity: 0;
-    visibility: hidden;
-  }
-  .sidebar.visible {
-    opacity: 1;
-    visibility: visible;
-  }
-  .inicio {
-    width: 100v;
-  }
-}
-@media (max-width: 600px) {
-  .abrirmenu {
-    position: fixed;
-    margin-top: 70px;
-    margin-left: 20px;
-    opacity: 0.8;
-    background: #041c32;
-    color: white;
-    font-size: 30px;
-    border: none;
-  }
-  .cerrarmenu {
-    background: #064663;
-    border: none;
-    font-size: 25px;
-    color: white;
-  }
-  .sidebar {
-    height: 100%;
-  }
-  .inicio {
-    height: 100vh;
-    width: 80vh;
-  }
-  .contenedorparrafo {
-    margin-left: 00px;
-    justify-content: center;
-  }
-  .presentacion {
-    margin-left: 150px;
-  }
-  /*  */
-  .informacion {
-    width: 80vh;
-    height: 100vh;
-  }
-  .contenedorinf {
-    flex-direction: column;
-    margin: 0%;
-  }
-  .explaboral {
-    margin: 15px;
-    margin-left: -5%;
-  }
-  .tarjetaExpe {
-    margin-left: -5%;
-    margin-top: 0px;
-  }
-  /*  */
-  .proyectos {
-    width: 80vh;
-  }
-  .contendorTarjetas {
-    justify-content: center;
-    align-items: center;
-  }
-  .tarjeta {
-    margin-left: -10px;
-    margin-top: 60px;
-  }
-  /*  */
-  .contacto {
-    width: 80vh;
-  }
-  
-}
+
 @media (max-width: 400px) {
   .tarjeta {
-    margin: 5px;
-    margin-top: 60px;
-    margin-right: 20px;
+    margin: 10px;
   }
   
 } */
 
-
-
  */
-
-
 /* -----------------------------------------NEW STYLES---------------------------------------------- */
 .container_profile{
-  display: flex;
-  justify-content: space-between;
-  margin-top: 100px;
+  display:flex;
+  /* justify-content: space-between; */
+  
 }
 .information_profile{
   display: flex;
@@ -376,14 +139,14 @@ li {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.858);
   color: #fff;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   opacity: 0;
-  transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.4s ease-in-out;
 }
 
 .cardd:hover .project-info {
@@ -409,8 +172,9 @@ li {
  /* align-items: ; */
  justify-content: center;
  flex-direction: column;
-  height: 80%;
+  height: 90%;
 }
+
 .imgProyects{
   width: 100%;
   height: 90%;
@@ -422,23 +186,35 @@ li {
 .card-body {
   height: 50px;
 }
-.tarjeta:hover{
-  height: 300px;
-
-}
 .tarjeta1{
   margin-top: 10px;
-  margin-right: 00px;
+  margin-right: 46%;
+  width: 22em;
 }
 .tarjeta2{
   margin-top: 10px;
   color: black;
-  margin-left: 50%;
+  margin-left: 46%;
   height: 100%;
 }
-.iconContact{
-  margin-right: 10%;
+@media (max-width: 768px)  {
+  .tarjeta1 {
+    width: 100%;
+    margin: auto;
+  }
+  .tarjeta2 {
+    width: 100%;
+    margin: auto;
+    height: 50%;
+    
+  }
   
+  
+}
+
+.iconContact{
+  
+  text-decoration: none;
 }
 .contenedorcontac{
   flex-direction: column;
@@ -446,14 +222,10 @@ li {
 .contact-card {
   width: 40%; /* Tamaño de la tarjeta */
   height: 200px;
-  padding: 20px;
-  /* background-color: #041c32; */
   border-radius: 10px; /* Bordes redondeados */
-  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); Sombra suave */
   text-align: center; /* Centrar contenido */
   margin: 0 auto; 
-  /* border-color: white; */
-  border: 1px solid white
+  margin-top: 3%;
 }
 
 .contact-title {
@@ -461,7 +233,6 @@ li {
   font-weight: bold;
   margin-bottom: 20px;
   color: white;
-
   border-radius: 10px;
 }
 
@@ -469,15 +240,54 @@ li {
   display: flex;
   justify-content: space-around; /* Espacio entre íconos */
   align-items: center;
+  flex-direction: column;
 }
 
 .iconContact {
   color: #ffffff; /* Cambia los colores si es necesario */
-  
+}
+.icon_box{
+  display: flex; 
+  flex-direction: column;
+  align-items: start;
+  padding: 10px; 
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  width: 300px;
+  margin-top: 10px;
+   transition: background-color 0.3s ease;
+   text-decoration: none;
+}
+.icon_box:hover {
+  background-color: rgba(200, 200, 200, 0.3); /* Color suave con transparencia */
 }
 
-.iconContact:hover{  
-  box-shadow: 0 0 5px  #ffffff; /* Sombra blanca alrededor del ícono */
-  transition:  0.3s ease; /* Transición suave del efecto hover */
-  border-radius: 10px;
+.card {
+  width: 22rem;
+  height: 100%;
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: 100%;  /* Asegura que la tarjeta ocupe todo el ancho en pantallas móviles */
+    margin-top:10px ;
+  }
+}
+.card-aerolab{
+  width: 36rem;
+  border-radius:10px ;
+  height: 100%;
+}
+
+@media (max-width: 768px) {
+
+  .card-aerolab{
+    width: 20rem;
+  }
+  .container_profile{
+  flex-direction: column;
+  }
+  .container_img_profile{
+    width: 100%;
+  }
 }

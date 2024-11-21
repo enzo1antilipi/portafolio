@@ -29,6 +29,13 @@
 }
 @media (max-width: 600px) {
   .contenedorfoo {
-    width: 80vh;
+    width: 100%;
   }
+}
+.conteinerFooter{
+  margin-top: 10px;
+}
+
+.iconFooter{
+  margin-right: 30px;
 }

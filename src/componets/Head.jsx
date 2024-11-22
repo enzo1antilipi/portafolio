@@ -3,19 +3,6 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import rick from "../assets/rick.png";
 import aerolab from "../assets/aerolab.png";
 import panto from "../assets/panto.png";
-import js from "../assets/js.png";
-import html from "../assets/html.png";
-import css from "../assets/css.png";
-import react from "../assets/react.png";
-import next from "../assets/next.png";
-import github from "../assets/github.png";
-import visual from "../assets/visual.png";
-import redux from "../assets/redux.png";
-import vite from "../assets/vite.png";
-import figma from "../assets/figma.png";
-import material from "../assets/material.png";
-import zustand from "../assets/zustand.png";
-import boo from "../assets/boo.png";
 import "animate.css";
 import { Footer } from "./Footer";
 import { GrMail } from "react-icons/gr";
@@ -34,22 +21,22 @@ export const Head = () => {
 
   return (
     <>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Navbar</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+        {/* <nav className="navbar navbar-expand-lg bg-body-tertiary">
+  <div className="container-fluid">
+    <a className="navbar-brand" href="#">Navbar</a>
+    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span className="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <div class="navbar-nav">
-        <a class="nav-link active" aria-current="page" href="#">Home</a>
-        <a class="nav-link" href="#">Features</a>
-        <a class="nav-link" href="#">Pricing</a>
-        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+    <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div className="navbar-nav">
+        <a className="nav-link active" aria-current="page" href="#">Home</a>
+        <a className="nav-link" href="#">Features</a>
+        <a className="nav-link" href="#">Pricinoog</a>
+        <a className="nav-link disabled" aria-disabled="true">Disabled</a>
       </div>
     </div>
   </div>
-</nav>
+</nav> */}
     
       <section id="inicio" className="inicio">
         <button className="abrirmenu" onClick={handleToggleNavClass}>

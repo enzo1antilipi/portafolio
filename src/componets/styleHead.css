@@ -205,15 +205,11 @@ p {
   .tarjeta2 {
     width: 100%;
     margin: auto;
-    height: 50%;
-    
+    height: 50%; 
   }
-  
-  
 }
 
 .iconContact{
-  
   text-decoration: none;
 }
 .contenedorcontac{
@@ -277,6 +273,7 @@ p {
   width: 36rem;
   border-radius:10px ;
   height: 100%;
+  transition: width 0.5s ease, transform 0.5s ease;
 }
 
 @media (max-width: 768px) {
@@ -289,5 +286,91 @@ p {
   }
   .container_img_profile{
     width: 100%;
+    margin-right: 0%;
+  }
+  .style_img_profile{
+    margin-right: 0%;
+    width: 90%;
+  }
+}
+.card-aerolab:hover{
+width: 36rem;
+   transform: scale(1.1);
+}
+
+
+/* Contenedor principal de la barra de navegación */
+.custom-navbar {
+  width: 70%;
+  margin: 10px auto;
+  border-radius: 10px;
+  background-color: #f8f9fa;
+  padding: 10px 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+/* Contenedor interno */
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Botón de menú */
+.navbar-toggler {
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: none; /* Visible solo en móviles */
+}
+
+/* Menú de navegación */
+.navbar-collapse {
+  transition: max-height 0.3s ease-out;
+  overflow: hidden;
+  max-height: 0; /* Colapsado por defecto */
+}
+
+.navbar-collapse.expanded {
+  max-height: 200px; /* Ajustar según contenido */
+}
+
+.navbar-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 20px;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.nav-item a:hover {
+  background-color: #ddd;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+  .navbar-toggler {
+    display: block;
+  }
+  .navbar-collapse {
+    flex-direction: column;
+    align-items: center;
+  }
+  .navbar-menu {
+    flex-direction: column;
+    gap: 10px;
   }
 }

@@ -6,7 +6,7 @@ function Profile (){
     return<>
     <div className="container_profile" style={{display:"flex",marginTop:"100px"}}>
     <div className="information_profile">
-        <h1 style={{color:"white"}}>Enzo Antilipi</h1>
+        <h1 className="name">Enzo Antilipi</h1>
                 <p className="subtitle_dev">Desarrollador de Software</p>
                 <p>Estoy en el mundo IT hace casi 2 años con experiencia en diferentes Proyectos</p>
          <div>

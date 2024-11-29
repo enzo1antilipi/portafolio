@@ -6,10 +6,10 @@ function Profile (){
     return<>
     <div className="container_profile" style={{display:"flex",marginTop:"100px"}}>
     <div className="information_profile">
-        <h1 className="name">Enzo Antilipi</h1>
+        <h2 className="name">Enzo Antilipi</h2>
                 <p className="subtitle_dev">Desarrollador de Software</p>
-                <p>Estoy en el mundo IT hace casi 2 años con experiencia en diferentes Proyectos</p>
-         <div>
+                <p style={{fontSize:"18px", marginLeft:"10px"}}>Apasionado por la tecnología, con 2 años de experiencia desarrollando soluciones innovadoras en diversos proyectos.</p>
+         <div className="conteiner_icons">
                 <svg xmlns="http://www.w3.org/2000/svg" className="iconsExperienceProf" width="1.5em" height="1.5em" viewBox="0 0 256 256"><g fill="none"><rect width="256" height="256" fill="#e14e1d" rx="60"/><path fill="white" d="m48 38l8.61 96.593h110.71l-3.715 41.43l-35.646 9.638l-35.579-9.624l-2.379-26.602H57.94l4.585 51.281l65.427 18.172l65.51-18.172l8.783-98.061H85.824l-2.923-32.71h122.238L208 38z"/><path fill="#ebebeb" d="M128 38H48l8.61 96.593H128v-31.938H85.824l-2.923-32.71H128zm0 147.647l-.041.014l-35.579-9.624l-2.379-26.602H57.94l4.585 51.281l65.427 18.172l.049-.014z"/></g></svg>
                 <svg xmlns="http://www.w3.org/2000/svg" className="iconsExperienceProf" width="1em" height="1em" viewBox="0 0 256 256"><g fill="none"><rect width="256" height="256" fill="#0277bd" rx="60"/><path fill="#ebebeb" d="m53.753 102.651l2.862 31.942h71.481v-31.942zM128.095 38H48l2.904 31.942h77.191zm0 180.841v-33.233l-.14.037l-35.574-9.605l-2.274-25.476H58.042l4.475 50.154l65.431 18.164z"/><path fill="white" d="m167.318 134.593l-3.708 41.426l-35.625 9.616v33.231l65.483-18.148l.48-5.397l7.506-84.092l.779-8.578L208 38h-80.015v31.942h45.009l-2.906 32.709h-42.103v31.942z"/></g></svg>
                 <svg xmlns="http://www.w3.org/2000/svg" className="iconsExperienceProf" width="1em" height="1em" viewBox="0 0 256 256"><path fill="#f7df1e" d="M0 0h256v256H0z"/><path d="m67.312 213.932l19.59-11.856c3.78 6.701 7.218 12.371 15.465 12.371c7.905 0 12.89-3.092 12.89-15.12v-81.798h24.057v82.138c0 24.917-14.606 36.259-35.916 36.259c-19.245 0-30.416-9.967-36.087-21.996m85.07-2.576l19.588-11.341c5.157 8.421 11.859 14.607 23.715 14.607c9.969 0 16.325-4.984 16.325-11.858c0-8.248-6.53-11.17-17.528-15.98l-6.013-2.58c-17.357-7.387-28.87-16.667-28.87-36.257c0-18.044 13.747-31.792 35.228-31.792c15.294 0 26.292 5.328 34.196 19.247l-18.732 12.03c-4.125-7.389-8.591-10.31-15.465-10.31c-7.046 0-11.514 4.468-11.514 10.31c0 7.217 4.468 10.14 14.778 14.608l6.014 2.577c20.45 8.765 31.963 17.7 31.963 37.804c0 21.654-17.012 33.51-39.867 33.51c-22.339 0-36.774-10.654-43.819-24.574"/></svg>
@@ -22,7 +22,7 @@ function Profile (){
                 
                                   
         </div>       
-        <div>
+        <div className="conteiner_icons">
                 <svg xmlns="http://www.w3.org/2000/svg"  className="iconsExperienceProf" width="1em" height="1em" viewBox="0 0 128 128"><circle cx="64" cy="64" r="64"/><path fill="url(#deviconNextjs0)" d="M106.317 112.014L49.167 38.4H38.4v51.179h8.614v-40.24l52.54 67.884a64 64 0 0 0 6.763-5.209"/><path fill="url(#deviconNextjs1)" d="M81.778 38.4h8.533v51.2h-8.533z"/><defs><linearGradient id="deviconNextjs0" x1="109" x2="144.5" y1="116.5" y2="160.5" gradientTransform="scale(.71111)" gradientUnits="userSpaceOnUse"><stop stop-color="white"/><stop offset="1" stop-color="white" stop-opacity="0"/></linearGradient><linearGradient id="deviconNextjs1" x1="121" x2="120.799" y1="54" y2="106.875" gradientTransform="scale(.71111)" gradientUnits="userSpaceOnUse"><stop stop-color="white"/><stop offset="1" stop-color="white" stop-opacity="0"/></linearGradient></defs></svg>
 
                  {/* Python */}

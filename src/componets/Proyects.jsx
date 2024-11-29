@@ -60,7 +60,7 @@ function Proyects(){
             </div>
         </div> */}
         <div className="tarjeta2">
-              <div className="card card-aerolab" style={{ marginTop:"10px" }} href="https://www.linkedin.com/in/enzo-antilipi-978097218/"  target="_blank">
+              <div className="card card-aerolab" style={{ marginTop:"10px" }} href="https://admi-tarea-front-7lzd.vercel.app/"  target="_blank">
                 <a href="https://www.linkedin.com"  target="_blank">
                 <img className="card-img-top" alt="..." src={tasks} href="https://www.linkedin.com"  target="_blank"/>
                 </a>

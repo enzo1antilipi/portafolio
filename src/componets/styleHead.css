@@ -108,18 +108,18 @@ p {
   align-content: center;
   margin: auto;
   justify-content: center;
-  width: 50%;
+  width: 70%;
   height: 10%;
 }
 .style_img_profile{
-  width:80%; 
+  width:90%; 
   height:auto; 
   border-radius:30px;
   margin-top: 5%;
   margin-right:10%
 }
 .subtitle_dev{
-  color:rgb(184, 110, 0);
+  color:rgb(160, 160, 160);
   font-family: 'Times New Roman', Times, serif;
   font-size: 30px;
 }
@@ -198,6 +198,11 @@ p {
   height: 100%;
 }
 @media (max-width: 768px)  {
+  .information_profile {
+    text-align: left;
+    margin-left: 0px;
+  }
+
   .tarjeta1 {
     width: 100%;
     margin: auto;
@@ -209,7 +214,9 @@ p {
     height: 50%; 
   }
 }
-
+.conteiner_icons{
+  margin-right: 50%;
+}
 .iconContact{
   text-decoration: none;
 }
@@ -293,6 +300,10 @@ p {
     margin-right: 0%;
     width: 90%;
   }
+    .conteiner_icons{
+    text-align: left ;
+    margin-right: 0ch;
+  }
 }
 .card-aerolab:hover{
 width: 36rem;
@@ -360,7 +371,9 @@ width: 36rem;
 .nav-item a:hover {
   background-color: #ddd;
 }
-
+.name{color:white;
+margin-right: 65%;
+}
 /* Estilos responsivos */
 @media (max-width: 768px) {
   .navbar-toggler {
@@ -375,8 +388,15 @@ width: 36rem;
     gap: 10px;
   }
   .name{
-  color: white;
-  margin: auto;
-  align-items:start;
+  color: rgb(223, 223, 223);
+  margin: 0px;
+  margin-right: 55%;
+ }
+ .style_img_profile{
+  margin-top:80px;
+ }
 }
+
+.subtitle_dev{
+  margin-right: 40%;
 }
